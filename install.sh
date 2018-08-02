@@ -31,32 +31,33 @@ brew install wget
 brew install brew-cask
 
 brew tap caskroom/cask
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/binary
-brew tap homebrew/php
 brew install homebrew/php/terminus
 brew install homebrew/php/wp-cli
 
 # Applications
-brew cask install 1password
-brew cask install balsamiq-mockups
+brew cask install lastpass
 brew cask install bartender
-brew cask install docker
 brew cask install firefox
 brew cask install google-backup-and-sync
 brew cask install google-chrome
-brew cask install google-photos-backup
 brew cask install harvest
 brew cask install iterm2
 brew cask install kap
-brew cask install rescuetime
-brew cask install java
-brew cask install screaming-frog-seo-spider
+# brew cask install rescuetime
+# brew cask install screaming-frog-seo-spider
 brew cask install slack
-brew cask install sublime-text
-brew cask install transmit
+
+# brew cask install transmit
+# brew cask install phpstorm
+# brew cask install atom
+# brew cask install sublime-text
+# brew cask install sublime-text3
+#
 brew cask install zoomus
+brew cask install opera
+brew cask install zeplin
+brew cask install virtualbox
+
 
 # Node/NPM Tools
 brew install node
@@ -81,9 +82,21 @@ npm install --global psi
 npm install --global sitespeed.io
 # WebPageTest API Wrapper is a NPM package that wraps WebPageTest API for NodeJS
 npm install --global webpagetest
+# Gulp
+npm install --global gulp-cli
+
+# Ruby
+gem install bundler
+
+# Get Docksal and install it. You will have to allow Oracle's extension to run.
+curl -fsSL get.docksal.io | bash
 
 # Get composer and put it in the right place. This will require your password
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
+# I'm having issues; trying this approach.
+mkdir $HOME/.composer
+sudo chown -R $USER $HOME/.composer
 
 # Install Composer tools
 # composer parallel install plugin
@@ -105,15 +118,15 @@ brew tap homebrew/homebrew-php
 
 # Do the Mac thing that you have to do but you shouldn't have to do
 # This https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
-curl -o ~/Library/LaunchAgents/ssh.add.a.plist https://raw.githubusercontent.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain/master/ssh.add.a.plist
+# curl -o ~/Library/LaunchAgents/ssh.add.a.plist https://raw.githubusercontent.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain/master/ssh.add.a.plist
 
 # Hold my own hand to make sure I finish configuring
-echo "Add your ssh keys (you put them in your secret hiding place)."
-pause 'Press [Enter] when you have added your ssh key.'
-chmod 400 ~/.ssh/*
+# echo "Add your ssh keys (you put them in your secret hiding place)."
+# pause 'Press [Enter] when you have added your ssh key.'
+# chmod 400 ~/.ssh/*
 
 # Get git things
 curl -o /usr/local/etc/bash_completion.d/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 curl -o /usr/local/etc/bash_completion.d/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
-echo "Script finished.  Be sure to install Pixelmator manually."
+echo "Script finished."
