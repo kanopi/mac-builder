@@ -67,11 +67,10 @@ brew cask install virtualbox
 
 # Node/NPM Tools
 brew install node
+brew install yarn
 brew install npm
 # Easy accessibility audits powered by the Chrome Accessibility Tools
 npm install --global a11y
-# A package manager for the web
-npm install -g bower
 # The Grunt command line interface
 npm install --global grunt-cli
 # Grunt wrapper for criticalcss
