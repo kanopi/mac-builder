@@ -28,7 +28,7 @@ brew install imagemagick
 brew install ruby
 brew install git
 brew install wget
-brew install brew-cask
+# brew install brew-cask
 
 brew tap caskroom/cask
 brew install homebrew/php/terminus
@@ -36,30 +36,36 @@ brew install homebrew/php/wp-cli
 
 # Applications
 brew cask install lastpass
+brew cask install amphetamine
 brew cask install bartender
+brew cask install alfred
+
 brew cask install firefox
-brew cask install google-backup-and-sync
 brew cask install google-chrome
+brew cask install opera
+
+brew cask install google-backup-and-sync
 brew cask install harvest
-brew cask install iterm2
 brew cask install kap
-# brew cask install rescuetime
-# brew cask install screaming-frog-seo-spider
+brew cask install rescuetime
+
+brew cask install zoomus
 brew cask install slack
+
+brew cask install zeplin
 brew cask install sketch
 brew cask install adobe-creative-cloud
 
-# brew cask install transmit
 # brew cask install phpstorm
 # brew cask install atom
 # brew cask install sublime-text
 # brew cask install sublime-text3
 
-brew cask install zoomus
-brew cask install opera
-brew cask install zeplin
+brew cask install iterm2
 brew cask install virtualbox
-
+# brew cask install transmit
+# brew cask install the-unarchiver
+# brew cask install screaming-frog-seo-spider
 
 # Node/NPM Tools
 brew install node
