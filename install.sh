@@ -28,7 +28,6 @@ brew install imagemagick
 brew install ruby
 brew install git
 brew install wget
-# brew install brew-cask
 
 brew tap caskroom/cask
 brew install homebrew/php/terminus
@@ -59,7 +58,6 @@ brew cask install adobe-creative-cloud
 # brew cask install phpstorm
 # brew cask install atom
 # brew cask install sublime-text
-# brew cask install sublime-text3
 
 brew cask install iterm2
 brew cask install virtualbox
@@ -103,7 +101,6 @@ curl -fsSL get.docksal.io | bash
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 # I'm having issues; trying this approach.
-mkdir $HOME/.composer
 sudo chown -R $USER $HOME/.composer
 
 # Install Composer tools
@@ -116,13 +113,6 @@ composer global require wp-coding-standards/wpcs:dev-master
 
 # Sets Config for PHP_CodeSniffer
 phpcs --config-set installed_paths $HOME/.composer/vendor/drupal/coder/coder_sniffer,$HOME/.composer/vendor/wp-coding-standards/wpcs
-
-# Set up PHP tools
-# https://philsturgeon.uk/php/2013/08/20/php-static-analysis-in-sublime-text/
-# http://benmatselby.github.io/sublime-phpcs/
-echo "Setting up PHP Tools"
-sudo chown -R `whoami` /usr/local
-brew tap homebrew/homebrew-php
 
 # Do the Mac thing that you have to do but you shouldn't have to do
 # This https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
