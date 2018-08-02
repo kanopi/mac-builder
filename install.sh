@@ -46,13 +46,15 @@ brew cask install kap
 # brew cask install rescuetime
 # brew cask install screaming-frog-seo-spider
 brew cask install slack
+brew cask install sketch
+brew cask install adobe-creative-cloud
 
 # brew cask install transmit
 # brew cask install phpstorm
 # brew cask install atom
 # brew cask install sublime-text
 # brew cask install sublime-text3
-#
+
 brew cask install zoomus
 brew cask install opera
 brew cask install zeplin
