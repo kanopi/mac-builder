@@ -52,8 +52,8 @@ brew cask install zoomus
 brew cask install slack
 
 brew cask install zeplin
-brew cask install sketch
-brew cask install adobe-creative-cloud
+# brew cask install sketch
+# brew cask install adobe-creative-cloud
 
 # brew cask install phpstorm
 # brew cask install atom
