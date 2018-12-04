@@ -34,8 +34,8 @@ brew install homebrew/php/terminus
 brew install homebrew/php/wp-cli
 
 # Applications
-brew cask install lastpass
-brew cask install amphetamine
+# brew cask install lastpass
+# brew cask install amphetamine
 brew cask install bartender
 brew cask install alfred
 
@@ -43,7 +43,7 @@ brew cask install firefox
 brew cask install google-chrome
 brew cask install opera
 
-brew cask install google-backup-and-sync
+brew cask install google-drive-file-stream
 brew cask install harvest
 brew cask install kap
 brew cask install rescuetime
