@@ -28,16 +28,10 @@ brew install imagemagick
 brew install ruby
 brew install git
 brew install wget
-
 brew tap caskroom/cask
-brew install homebrew/php/terminus
-brew install homebrew/php/wp-cli
 
 # Applications
 # brew cask install lastpass
-# brew cask install amphetamine
-brew cask install bartender
-brew cask install alfred
 
 brew cask install firefox
 brew cask install google-chrome
@@ -50,10 +44,25 @@ brew cask install rescuetime
 
 brew cask install zoomus
 brew cask install slack
-
 brew cask install zeplin
+
+
+
+# Creative Applications
 # brew cask install sketch
 # brew cask install adobe-creative-cloud
+
+# Other
+# brew cask install transmit
+# brew cask install the-unarchiver
+# brew cask install screaming-frog-seo-spider
+# brew cask install bartender
+# brew cask install alfred
+
+# ALL DEV ALL THE TIME FROM HERE DOWN
+# Developer Applications
+brew install homebrew/php/terminus
+brew install homebrew/php/wp-cli
 
 # brew cask install phpstorm
 # brew cask install atom
@@ -61,9 +70,6 @@ brew cask install zeplin
 
 brew cask install iterm2
 brew cask install virtualbox
-# brew cask install transmit
-# brew cask install the-unarchiver
-# brew cask install screaming-frog-seo-spider
 
 # Node/NPM Tools
 brew install node
@@ -113,6 +119,8 @@ composer global require wp-coding-standards/wpcs:dev-master
 # Sets Config for PHP_CodeSniffer
 phpcs --config-set installed_paths $HOME/.composer/vendor/drupal/coder/coder_sniffer,$HOME/.composer/vendor/wp-coding-standards/wpcs
 
+
+# IGNORE THESE
 # Do the Mac thing that you have to do but you shouldn't have to do
 # This https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
 # curl -o ~/Library/LaunchAgents/ssh.add.a.plist https://raw.githubusercontent.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain/master/ssh.add.a.plist
