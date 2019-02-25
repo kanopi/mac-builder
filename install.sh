@@ -134,4 +134,11 @@ phpcs --config-set installed_paths $HOME/.composer/vendor/drupal/coder/coder_sni
 curl -o /usr/local/etc/bash_completion.d/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 curl -o /usr/local/etc/bash_completion.d/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
+# Make sure the admin group is set for Applications
+sudo chown -R root:admin /Applications/*
+# Make sure all admins can write to Applications
+sudo chmod -R g+w /Applications/*
+# Remove the quarantine flag for anything downloaded
+xattr -rd com.apple.quarantine /Applications/*.app
+ 
 echo "Script finished."
