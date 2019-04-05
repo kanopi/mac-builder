@@ -40,6 +40,7 @@ brew cask install opera
 brew cask install google-drive-file-stream
 brew cask install harvest
 brew cask install kap
+brew cask install alfred
 brew cask install rescuetime
 
 brew cask install zoomus
@@ -57,7 +58,6 @@ brew cask install zeplin
 # brew cask install the-unarchiver
 # brew cask install screaming-frog-seo-spider
 # brew cask install bartender
-# brew cask install alfred
 
 # ALL DEV ALL THE TIME FROM HERE DOWN
 # Developer Applications
@@ -135,10 +135,10 @@ curl -o /usr/local/etc/bash_completion.d/git-prompt.sh https://raw.githubusercon
 curl -o /usr/local/etc/bash_completion.d/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
 # Make sure the admin group is set for Applications
-sudo chown -R root:admin /Applications/*
+# sudo chown -R root:admin /Applications/*
 # Make sure all admins can write to Applications
-sudo chmod -R g+w /Applications/*
+# sudo chmod -R g+w /Applications/*
 # Remove the quarantine flag for anything downloaded
-xattr -rd com.apple.quarantine /Applications/*.app
+# xattr -rd com.apple.quarantine /Applications/*.app
  
 echo "Script finished."
