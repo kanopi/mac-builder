@@ -1,5 +1,5 @@
 # Mac Builder
-Scripts to run a fresh install of a Mac, customized for me.
+Scripts to run a fresh install of a Mac, customized for Kanopi.
 
 ## Installation
 1. Clone this repository to your local computer.
