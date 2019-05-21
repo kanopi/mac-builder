@@ -61,8 +61,7 @@ brew cask install zeplin
 
 # ALL DEV ALL THE TIME FROM HERE DOWN
 # Developer Applications
-brew install homebrew/php/terminus
-brew install homebrew/php/wp-cli
+brew install wp-cli
 
 # brew cask install phpstorm
 # brew cask install atom
@@ -115,6 +114,14 @@ composer global require hirak/prestissimo
 composer global require drupal/coder
 # Adds WordPress Coding Standards
 composer global require wp-coding-standards/wpcs:dev-master
+# Pantheon Terminus
+composer global require pantheon-systems/terminus
+
+# Add a fancy bash profile.
+# This should get Terminus and phpcs up and running
+# As well as add a lot of commands to make life easier.
+# Courtesy of Jason Savino. Our Super Developer. 
+cp _bash_profile.sh $USER $HOME/.bash_profile
 
 # Sets Config for PHP_CodeSniffer
 phpcs --config-set installed_paths $HOME/.composer/vendor/drupal/coder/coder_sniffer,$HOME/.composer/vendor/wp-coding-standards/wpcs
@@ -140,5 +147,5 @@ curl -o /usr/local/etc/bash_completion.d/git-completion.bash https://raw.githubu
 # sudo chmod -R g+w /Applications/*
 # Remove the quarantine flag for anything downloaded
 # xattr -rd com.apple.quarantine /Applications/*.app
- 
+
 echo "Script finished."
