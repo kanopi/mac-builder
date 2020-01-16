@@ -125,7 +125,8 @@ cgr pantheon-systems/terminus
 # This should get Terminus and phpcs up and running
 # As well as add a lot of commands to make life easier.
 # Courtesy of Jason Savino. Our Super Developer. 
-cp _bash_profile.sh $USER $HOME/.bash_profile
+cp _bash_profile.sh $HOME/.bash_profile
+. $HOME/.bash_profile
 
 # Sets Config for PHP_CodeSniffer
 phpcs --config-set installed_paths $HOME/.composer/vendor/drupal/coder/coder_sniffer,$HOME/.composer/vendor/wp-coding-standards/wpcs
