@@ -108,14 +108,18 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 sudo chown -R $USER $HOME/.composer
 
 # Install Composer tools
+# Safe replacement for `composer global require` 
+composer global require consolidation/cgr
+
+# if CGR commands fail, we need to set the path variable.
 # composer parallel install plugin
-composer global require hirak/prestissimo
+cgr hirak/prestissimo
 # Drupal Coder, PHP_CodeSniffer, and Drupal Coding Standards
-composer global require drupal/coder
+cgr drupal/coder
 # Adds WordPress Coding Standards
-composer global require wp-coding-standards/wpcs:dev-master
+cgr wp-coding-standards/wpcs:dev-master
 # Pantheon Terminus
-composer global require pantheon-systems/terminus
+cgr pantheon-systems/terminus
 
 # Add a fancy bash profile.
 # This should get Terminus and phpcs up and running
