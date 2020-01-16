@@ -105,7 +105,7 @@ curl -fsSL get.docksal.io | bash
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 # I'm having issues; trying this approach.
-sudo chown -R $USER $HOME/.composer
+sudo chown -R $HOME/.composer
 
 # Install Composer tools
 # Safe replacement for `composer global require` 
