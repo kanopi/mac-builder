@@ -21,14 +21,14 @@ pause 'Press [Enter] once you have installed XCode and XCode Command Line Tools.
 # Just make sure...
 sudo xcodebuild -license accept
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Homebrew
 brew install imagemagick
 brew install ruby
 brew install git
 brew install wget
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 # Applications
 # brew cask install lastpass
@@ -105,13 +105,17 @@ curl -fsSL get.docksal.io | bash
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 # I'm having issues; trying this approach.
-sudo chown -R $HOME/.composer
+sudo chown -R $USER ~/.composer/
 
 # Install Composer tools
 # Safe replacement for `composer global require` 
 composer global require consolidation/cgr
 
-# if CGR commands fail, we need to set the path variable.
+# If CGR commands fail, we need to set the path variable.
+
+# Set the path so cgr is recognized
+PATH="$(composer config -g home)/vendor/bin:$PATH"
+
 # composer parallel install plugin
 cgr hirak/prestissimo
 # Drupal Coder, PHP_CodeSniffer, and Drupal Coding Standards
